@@ -1,0 +1,29 @@
+JQUERY SELECT
+$("a[class='btn btn-primary btn-lg']").html()
+$("a[class='btn btn-primary btn-lg']").hide()
+$("a[class='btn btn-primary btn-lg']").show()
+$("a[class='btn btn-primary btn-lg']").toggle()
+
+$('a[href="https://go.microsoft.com/fwlink/?LinkId=301871"]').parent().parent().children('p').html()
+
+$("a[class='btn btn-primary btn-lg']").attr("id","btnDemo");
+$("#btnDemo").css("background-color","red")
+$("#btnDemo").css("height","128")
+
+
+API
+http://localhost:22735/api/Toilet/5
+
+{
+	"Seq" : "3" ,
+	"name" : "4" ,
+	"address" : "5" ,
+	"Lng" : "5" ,
+	"Lat" : "6"
+}
+
+$.ajax({
+  url: "http://localhost:22735/api/Toilet/5"
+}).done(function(data ) {
+  var jsObj = data;
+});
